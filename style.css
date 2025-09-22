@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.gradient {
+  background: linear-gradient(135deg, purple 20%, orange 80%);
+}
+body {
+  font-family: sans-serif;
+}
+.goleft:hover {
+  transition: padding 0.2s linear;
+  padding-left: 20px;
+}
+.hiddenul{
+    visibility: hidden;
+}

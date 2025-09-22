@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selector</title>
+    <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    
+<body class="gradient h-screen">
+    <main class="h-[100%] flex flex-col justify-center items-center gap-[16px]">
+        <div id="angel" class="bg-gray-300 flex px-[10px] py-[8px] rounded-[5px] w-[300px] items-center justify-between opacity-[0.3] cursor-pointer">
+            <p class="mx-[10px] my-0 flex gap-[8px] items-center" id="input">Social Media</p>
+            <img class="w-[26px] h-[26px]" src="./down.svg" alt="">
+        </div>
+        <div>
+            <ul class="hiddenul bg-gray-300 w-[300px] rounded-[5px] p-[10px] opacity-[0.3]" id="select">
+                <li class="goleft flex gap-[8px] items-center py-[12px] px-[10px] cursor-pointer rounded-[5px] hover:bg-gray-400" id="Facebook">
+                    <img class="w-[20px] h-[20px]" src="./facebook.svg" alt="">
+                    <span>Facebook</span>
+                </li>
+                <li class="goleft flex gap-[8px] items-center py-[12px] px-[10px] cursor-pointer rounded-[5px] hover:bg-gray-400" id="YouTube">
+                    <img class="w-[20px] h-[20px]" src="./youtube.svg" alt="">
+                    <span>YouTube</span>
+                </li>
+                <li class="goleft flex gap-[8px] items-center py-[12px] px-[10px] cursor-pointer rounded-[5px] hover:bg-gray-400" id="Twitter">
+                    <img class="w-[20px] h-[20px]" src="./Twitter.svg" alt="">
+                    <span>Twitter</span>
+                </li>
+                <li class="goleft flex gap-[8px] items-center py-[12px] px-[10px] cursor-pointer rounded-[5px] hover:bg-gray-400" id="Linkedin">
+                    <img class="w-[20px] h-[20px]" src="./linke.svg" alt="">
+                    <span>Linkedin</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>
