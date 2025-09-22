@@ -10,6 +10,9 @@ body {
   transition: padding 0.2s linear;
   padding-left: 20px;
 }
-.hiddenul{
-    visibility: hidden;
+.hiddenul {
+  visibility: hidden;
+}
+.rotate {
+  transform: rotate(180deg);
 }

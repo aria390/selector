@@ -9,6 +9,8 @@
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --spacing: 0.25rem;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -192,12 +194,6 @@
   .w-\[300px\] {
     width: 300px;
   }
-  .w-\[330px\] {
-    width: 330px;
-  }
-  .w-\[350px\] {
-    width: 350px;
-  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -231,20 +227,19 @@
   .px-\[10px\] {
     padding-inline: 10px;
   }
-  .py-\[7px\] {
-    padding-block: 7px;
-  }
   .py-\[8px\] {
     padding-block: 8px;
   }
   .py-\[12px\] {
     padding-block: 12px;
   }
-  .text-\[14px\] {
-    font-size: 14px;
-  }
   .opacity-\[0\.3\] {
     opacity: 0.3;
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .hover\:bg-gray-400 {
     &:hover {
@@ -266,4 +261,7 @@ body {
 }
 .hiddenul {
   visibility: hidden;
+}
+.rotate {
+  transform: rotate(180deg);
 }
